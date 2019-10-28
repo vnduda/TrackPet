@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "740406536859",
+    "firebase_url": "https://trackpet-5fd51.firebaseio.com",
+    "project_id": "trackpet-5fd51",
+    "storage_bucket": "trackpet-5fd51.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:740406536859:android:d4edbc5bd24f7065aff43e",
+        "android_client_info": {
+          "package_name": "com.trackpet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "740406536859-o8onlenuamh9du2smiqla96lirfu97c0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTQAV9hDoLErQbDjWDfbcHAEBBXm2nPK4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "740406536859-o8onlenuamh9du2smiqla96lirfu97c0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -3,7 +3,7 @@ import LoginController from './LoginController';
 
 const App = () => {
   return (
-    <LoginController />)
+    <LoginController />
   );
 };
 

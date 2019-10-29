@@ -1,7 +1,9 @@
 import React, { Component, Fragment } from "react";
 import { SafeAreaView, StyleSheet, ScrollView, View, Text, StatusBar, Button, Image, } from 'react-native';
-import { Header, LearnMoreLinks, Colors, DebugInstructions, ReloadInstructions, } from 'react-native/Libraries/NewAppScreen';
+import { Colors } from 'react-native/Libraries/NewAppScreen';
 import { GoogleSignin, GoogleSigninButton, statusCodes } from 'react-native-google-signin';
+import Header from "./Header";
+import HomePage from "./HomePage";
 
 export default class LoginController extends Component {
     constructor(props) {
@@ -11,6 +13,7 @@ export default class LoginController extends Component {
             loggedIn: false
         }
     }
+
     componentDidMount() {
         GoogleSignin.configure({
             webClientId: '740406536859-o8onlenuamh9du2smiqla96lirfu97c0.apps.googleusercontent.com',
@@ -71,12 +74,9 @@ export default class LoginController extends Component {
                     <ScrollView
                         contentInsetAdjustmentBehavior="automatic"
                         style={styles.scrollView}>
+
                         <Header />
-                        {global.HermesInternal == null ? null : (
-                            <View style={styles.engine}>
-                                <Text style={styles.footer}>Engine: Hermes</Text>
-                            </View>
-                        )}
+
                         <View style={styles.body}>
                             <View style={styles.sectionContainer}>
                                 <GoogleSigninButton
@@ -87,37 +87,39 @@ export default class LoginController extends Component {
                                     disabled={this.state.isSigninInProgress} />
                             </View>
                             <View style={styles.buttonContainer}>
-                                {!this.state.loggedIn && <Text>You are currently logged out</Text>}
+                                {!this.state.loggedIn && <Text>Você não está logado</Text>}
                                 {this.state.loggedIn && <Button onPress={this.signOut}
                                     title="Signout"
                                     color="#841584">
                                 </Button>}
                             </View>
 
-                            {!this.state.loggedIn && <LearnMoreLinks />}
-                            {this.state.loggedIn && <View>
-                                <View style={styles.listHeader}>
-                                    <Text>User Info</Text>
-                                </View>
-                                <View style={styles.dp}>
-                                    <Image
-                                        style={{ width: 100, height: 100 }}
-                                        source={{ uri: this.state.userInfo && this.state.userInfo.user && this.state.userInfo.user.photo }}
-                                    />
-                                </View>
-                                <View style={styles.detailContainer}>
-                                    <Text style={styles.title}>Name</Text>
-                                    <Text style={styles.message}>{this.state.userInfo && this.state.userInfo.user && this.state.userInfo.user.name}</Text>
-                                </View>
-                                <View style={styles.detailContainer}>
-                                    <Text style={styles.title}>Email</Text>
-                                    <Text style={styles.message}>{this.state.userInfo && this.state.userInfo.user && this.state.userInfo.user.email}</Text>
-                                </View>
-                                <View style={styles.detailContainer}>
-                                    <Text style={styles.title}>ID</Text>
-                                    <Text style={styles.message}>{this.state.userInfo && this.state.userInfo.user && this.state.userInfo.user.id}</Text>
-                                </View>
-                            </View>}
+                            {/* {this.state.loggedIn && <HomePage props={this.state} />} */}
+
+                            {this.state.loggedIn &&
+                                <View>
+                                    <View style={styles.listHeader}>
+                                        <Text>User Info</Text>
+                                    </View>
+                                    <View style={styles.dp}>
+                                        <Image
+                                            style={{ width: 100, height: 100 }}
+                                            source={{ uri: this.state.userInfo && this.state.userInfo.user && this.state.userInfo.user.photo }}
+                                        />
+                                    </View>
+                                    <View style={styles.detailContainer}>
+                                        <Text style={styles.title}>Nome</Text>
+                                        <Text style={styles.message}>{this.state.userInfo && this.state.userInfo.user && this.state.userInfo.user.name}</Text>
+                                    </View>
+                                    <View style={styles.detailContainer}>
+                                        <Text style={styles.title}>Email</Text>
+                                        <Text style={styles.message}>{this.state.userInfo && this.state.userInfo.user && this.state.userInfo.user.email}</Text>
+                                    </View>
+                                    <View style={styles.detailContainer}>
+                                        <Text style={styles.title}>ID</Text>
+                                        <Text style={styles.message}>{this.state.userInfo && this.state.userInfo.user && this.state.userInfo.user.id}</Text>
+                                    </View>
+                                </View>}
                         </View>
                     </ScrollView>
                 </SafeAreaView>

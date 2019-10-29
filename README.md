@@ -1,5 +1,8 @@
-# TrackPet
+# TrackPet :dog: :cat:
 Aplicativo com a finalidade de conectar donos de animais perdidos com pessoas que encontraram animais.
+
+#### Desenvolvedores:
+  Eduarda Vieira, João Victor Rocha, Ana Luisa Burjack, André Lopes
 
 ### Iniciando o projeto
 

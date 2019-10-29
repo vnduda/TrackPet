@@ -5,7 +5,7 @@ O intuito do sistema é criar um meio para conectar pessoas que perderam seus an
   Eduarda Vieira, João Victor Rocha, Ana Luisa Burjack, André Lopes
 
 #### Documentação de requisitos
-  Clique [aqui](Documentoderequisitos.pdf) para acessar a documentação
+  Clique [aqui](Documento-de-requisitos.pdf) para acessar a documentação
 
 ### Iniciando o projeto
 

@@ -10,17 +10,16 @@ O intuito do sistema é criar um meio para conectar pessoas que perderam seus an
 ### Iniciando o projeto
 
 #### Pré-requisitos:
-  - Caso não tenha feito a configuração inicial, seguir o [passo a passo](https://facebook.github.io/react-native/docs/getting-started)
-  - Após a configuração inicial, configurar um novo dispositivo android (ou emulador)
-      - seguindo o passo a passo para dispositivo [android](https://developer.android.com/studio/run/device)
-      - ou [emulador](https://docs.expo.io/versions/latest/workflow/android-studio-emulator/)
+  - Node instalado, juntamente com o npm.
+    - comandos no linux:
+        ``$ sudo apt-get update``
+        ``$ sudo apt-get install nodejs``
+        ``$ sudo apt-get install npm``
+  
   
 #### Iniciando a aplicação:
   ````
-  react-native start
+  rails s
   ````
-  Esse comando inicia o processo na porta 8081.
-  ````
-  react-native run-android
-  ````
-  Esse comando inicia o lançamento e instala o app.
+  Esse comando inicia o processo na porta 3000.
+  

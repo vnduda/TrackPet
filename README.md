@@ -15,7 +15,7 @@ O intuito do sistema é criar um meio para conectar pessoas que perderam seus an
         ``$ sudo apt-get update``
         ``$ sudo apt-get install nodejs``
         ``$ sudo apt-get install npm``
-  
+  - Ruby e o rails instalado
   
 #### Iniciando a aplicação:
   ````

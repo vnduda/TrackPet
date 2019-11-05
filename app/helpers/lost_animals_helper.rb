@@ -1,0 +1,2 @@
+module LostAnimalsHelper
+end

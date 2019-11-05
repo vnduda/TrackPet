@@ -1,0 +1,57 @@
+<%= form_with(model: found_animal, local: true) do |form| %>
+  <% if found_animal.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(found_animal.errors.count, "error") %> prohibited this found_animal from being saved:</h2>
+
+      <ul>
+        <% found_animal.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :image %>
+    <%= form.file_field :image %>
+  </div>
+
+  <div class="field">
+    <%= form.label :species %>
+    <%= form.text_field :species %>
+  </div>
+
+  <div class="field">
+    <%= form.label :sex %>
+    <%= form.text_field :sex %>
+  </div>
+
+  <div class="field">
+    <%= form.label :founddate %>
+    <%= form.date_select :founddate %>
+  </div>
+
+  <div class="field">
+    <%= form.label :foundplace %>
+    <%= form.text_field :foundplace %>
+  </div>
+
+  <div class="field">
+    <%= form.label :contact %>
+    <%= form.text_field :contact %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ps %>
+    <%= form.text_area :ps %>
+  </div>
+
+  <div class="field">
+    <%= form.label :User_id %>
+    <%= form.text_field :User_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -19,6 +19,11 @@
   <tbody>
     <% @lost_animals.each do |lost_animal| %>
       <tr>
+        <td>
+          <% if lost_animal.image.attached? %>
+          <%= image_tag lost_animal.image %>
+          <% end %>
+        </td>
         <td><%= lost_animal.species %></td>
         <td><%= lost_animal.sex %></td>
         <td><%= lost_animal.lostdate %></td>

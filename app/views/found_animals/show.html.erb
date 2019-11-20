@@ -3,39 +3,39 @@
 <%= link_to image_tag(@found_animal.image), found_animals_path %>
 
 <p>
-  <strong>Species:</strong>
+  <strong>Espécie:</strong>
   <%= @found_animal.species %>
 </p>
 
 <p>
-  <strong>Sex:</strong>
+  <strong>Sexo:</strong>
   <%= @found_animal.sex %>
 </p>
 
 <p>
-  <strong>Founddate:</strong>
+  <strong>Data encontrado:</strong>
   <%= @found_animal.founddate %>
 </p>
 
 <p>
-  <strong>Foundplace:</strong>
+  <strong>Local encontrado:</strong>
   <%= @found_animal.foundplace %>
 </p>
 
 <p>
-  <strong>Contact:</strong>
+  <strong>Contato:</strong>
   <%= @found_animal.contact %>
 </p>
 
 <p>
-  <strong>Ps:</strong>
+  <strong>Observações:</strong>
   <%= @found_animal.ps %>
 </p>
 
 <p>
-  <strong>User:</strong>
+  <strong>Usuário:</strong>
   <%= @found_animal.User_id %>
 </p>
 
-<%= link_to 'Edit', edit_found_animal_path(@found_animal) %> |
+<%= link_to 'Editar', edit_found_animal_path(@found_animal) %> |
 <%= link_to 'Back', found_animals_path %>

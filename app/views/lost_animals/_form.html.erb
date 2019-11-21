@@ -12,46 +12,46 @@
   <% end %>
 
   <div class="field">
-    <%= form.label :image %>
+    <%= form.label :image, 'Foto do animal' %>
     <%= form.file_field :image %>
   </div>
 
   <div class="field">
-    <%= form.label :species %>
+    <%= form.label :species, 'Espécie' %>
     <%= form.text_field :species %>
   </div>
 
   <div class="field">
-    <%= form.label :sex %>
+    <%= form.label :sex, 'Sexo' %>
     <%= form.text_field :sex %>
   </div>
 
   <div class="field">
-    <%= form.label :lostdate %>
+    <%= form.label :lostdate, 'Data que desapareceu' %>
     <%= form.date_select :lostdate %>
   </div>
 
   <div class="field">
-    <%= form.label :lostplace %>
+    <%= form.label :lostplace, 'Local que desapareceu' %>
     <%= form.text_field :lostplace %>
   </div>
 
   <div class="field">
-    <%= form.label :contact %>
+    <%= form.label :contact, 'Contato' %>
     <%= form.text_field :contact %>
   </div>
 
   <div class="field">
-    <%= form.label :ps %>
+    <%= form.label :ps, 'Observação' %>
     <%= form.text_area :ps %>
   </div>
 
   <div class="field">
-    <%= form.label :User_id %>
+    <%= form.label :User_id, 'Usuário' %>
     <%= form.text_field :User_id %>
   </div>
 
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit "Cadastrar" %>
   </div>
 <% end %>

@@ -1,4 +1,5 @@
 # TrackPet :dog: :cat:
+![Integração Contínua](https://travis-ci.org/vnduda/TrackPet.svg?branch=master)
 
 #### Descrição do projeto TrackPet
 Atualmente há uma grande dificuldade em divulgar animais desaparecidos, para quem perdeu ou para quem encontrou. Os mais usados são redes sociais e grupos em apps de conversação, que acabam não sendo muito eficazes devido os seguintes fatores, por exemplo: 

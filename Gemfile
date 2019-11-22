@@ -24,6 +24,7 @@ gem 'jbuilder', '~> 2.7'
 gem 'spree', '~> 4.0'
 gem 'spree_auth_devise', '~> 4.0'
 gem 'spree_gateway', '~> 3.6'
+gem 'devise'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'

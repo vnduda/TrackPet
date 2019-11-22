@@ -5,5 +5,5 @@ script:
  - bundle install
  - bundle exec rake db:create
  - bundle exec rake db:migrate
- - rake test
+ - bundle exec rake test
  - rdoc app

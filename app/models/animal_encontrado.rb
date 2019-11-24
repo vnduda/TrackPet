@@ -1,0 +1,2 @@
+class AnimalEncontrado < ApplicationRecord
+end

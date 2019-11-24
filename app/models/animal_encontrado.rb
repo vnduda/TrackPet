@@ -1,2 +1,0 @@
-class AnimalEncontrado < ApplicationRecord
-end

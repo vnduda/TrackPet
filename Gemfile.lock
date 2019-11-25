@@ -62,6 +62,16 @@ GEM
     bindex (0.8.1)
     bootsnap (1.4.5)
       msgpack (~> 1.0)
+<<<<<<< HEAD
+=======
+    bootstrap (4.3.1)
+      autoprefixer-rails (>= 9.1.0)
+      popper_js (>= 1.14.3, < 2)
+      sassc-rails (>= 2.0.0)
+    bootstrap-sass (3.4.1)
+      autoprefixer-rails (>= 5.2.1)
+      sassc (>= 2.0.0)
+>>>>>>> master
     builder (3.2.3)
     byebug (11.0.1)
     capybara (3.29.0)
@@ -214,10 +224,12 @@ PLATFORMS
 
 DEPENDENCIES
   bootsnap (>= 1.4.2)
+  bootstrap-sass (~> 3.4.1)
   byebug
   capybara (>= 2.15)
   devise
   jbuilder (~> 2.7)
+  jquery-rails
   listen (>= 3.0.5, < 3.2)
   puma (~> 3.11)
   rails (~> 6.0.0)
@@ -233,7 +245,7 @@ DEPENDENCIES
   webpacker (~> 4.0)
 
 RUBY VERSION
-   ruby 2.6.3p62
+   ruby 2.6.5p114
 
 BUNDLED WITH
    2.0.2

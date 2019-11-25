@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+
+<%= link_to image_tag(@animal_lost.image), animal_founds_path %>
+
+<p>
+  <strong>Espécie:</strong>
+  <%= @animal_lost.specie %>
+</p>
+
+<p>
+  <strong>Sexo:</strong>
+  <%= @animal_lost.sex %>
+</p>
+
+<p>
+  <strong>Data que se perdeu:</strong>
+  <%= @animal_lost.lostdate %>
+</p>
+
+<p>
+  <strong>Local que se perdeu:</strong>
+  <%= @animal_lost.lostplace %>
+</p>
+
+<p>
+  <strong>Contato:</strong>
+  <%= @animal_lost.contact %>
+</p>
+
+<p>
+  <strong>Observação:</strong>
+  <%= @animal_lost.ps %>
+</p>
+
+<%= link_to 'Editar', edit_animal_lost_path(@animal_lost) %> |
+<%= link_to 'Voltar', animal_losts_path %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_11_05_213102) do
+ActiveRecord::Schema.define(version: 2019_11_24_145228) do
 
   create_table "active_storage_attachments", force: :cascade do |t|
     t.string "name", null: false
@@ -33,42 +33,39 @@ ActiveRecord::Schema.define(version: 2019_11_05_213102) do
     t.index ["key"], name: "index_active_storage_blobs_on_key", unique: true
   end
 
-  create_table "found_animals", force: :cascade do |t|
-    t.string "species"
+  create_table "animal_founds", force: :cascade do |t|
+    t.string "specie"
     t.string "sex"
     t.date "founddate"
     t.string "foundplace"
     t.string "contact"
     t.text "ps"
-    t.integer "User_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["User_id"], name: "index_found_animals_on_User_id"
   end
 
-  create_table "lost_animals", force: :cascade do |t|
-    t.string "species"
+  create_table "animal_losts", force: :cascade do |t|
+    t.string "specie"
     t.string "sex"
     t.date "lostdate"
     t.string "lostplace"
     t.string "contact"
     t.text "ps"
-    t.integer "User_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["User_id"], name: "index_lost_animals_on_User_id"
   end
 
   create_table "users", force: :cascade do |t|
-    t.string "name"
-    t.date "birthday"
-    t.integer "phone"
-    t.string "email"
+    t.string "email", default: "", null: false
+    t.string "encrypted_password", default: "", null: false
+    t.string "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.index ["email"], name: "index_users_on_email", unique: true
+    t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
   add_foreign_key "active_storage_attachments", "active_storage_blobs", column: "blob_id"
-  add_foreign_key "found_animals", "Users"
-  add_foreign_key "lost_animals", "Users"
 end

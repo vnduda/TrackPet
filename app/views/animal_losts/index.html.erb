@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Animal Perdido</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Foto do animal</th>
+      <th>Espécie</th>
+      <th>Sexo</th>
+      <th>Data que se perdeu</th>
+      <th>Local que se perdeu</th>
+      <th>Contato</th>
+      <th>Observação</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @animal_losts.each do |animal_lost| %>
+      <tr>
+        <td>
+          <% if animal_found.image.attached? %>
+          <%= image_tag animal_found.image %>
+          <% end %>
+        </td>
+        <td><%= animal_lost.specie %></td>
+        <td><%= animal_lost.sex %></td>
+        <td><%= animal_lost.lostdate %></td>
+        <td><%= animal_lost.lostplace %></td>
+        <td><%= animal_lost.contact %></td>
+        <td><%= animal_lost.ps %></td>
+        <td><%= link_to 'Mostrar', animal_lost %></td>
+        <td><%= link_to 'Editar', edit_animal_lost_path(animal_lost) %></td>
+        <td><%= link_to 'Família Reunida', animal_lost, method: :delete, data: { confirm: 'Você tem certeza que o animal foi devolvido a família dele? } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'Novo Animal Perdido', new_animal_lost_path %>

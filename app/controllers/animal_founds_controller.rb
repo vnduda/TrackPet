@@ -69,6 +69,6 @@ class AnimalFoundsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def animal_found_params
-      params.require(:animal_found).permit(:specie, :sex, :founddate, :foundplace, :contact, :ps)
+      params.require(:animal_found).permit(:image, :specie, :sex, :founddate, :foundplace, :contact, :ps)
     end
 end

@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Foto do animal</th>
       <th>Espécie</th>
       <th>Sexo</th>
       <th>Data que se perdeu</th>
@@ -18,6 +19,11 @@
   <tbody>
     <% @animal_losts.each do |animal_lost| %>
       <tr>
+        <td>
+          <% if animal_found.image.attached? %>
+          <%= image_tag animal_found.image %>
+          <% end %>
+        </td>
         <td><%= animal_lost.specie %></td>
         <td><%= animal_lost.sex %></td>
         <td><%= animal_lost.lostdate %></td>

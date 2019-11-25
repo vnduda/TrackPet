@@ -5,6 +5,7 @@
 <table>
   <thead>
     <tr>
+      <th>Foto do animal</th>
       <th>Espécie</th>
       <th>Sexo</th>
       <th>Data que foi encontrado</th>
@@ -18,6 +19,11 @@
   <tbody>
     <% @animal_founds.each do |animal_found| %>
       <tr>
+        <td>
+          <% if animal_found.image.attached? %>
+          <%= image_tag animal_found.image %>
+          <% end %>
+        </td>
         <td><%= animal_found.specie %></td>
         <td><%= animal_found.sex %></td>
         <td><%= animal_found.founddate %></td>

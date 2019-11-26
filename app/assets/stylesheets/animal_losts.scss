@@ -2,6 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.text-center {
+    text-align: center!important;
+}
+
+.col-12.col-sm-12.col-md-6.col-lg-6{
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+::after, ::before {
+    box-sizing: border-box;
+}
+
 .my_custom_table {
     min-width: 350px;
     font-size: 14px;
@@ -28,8 +44,33 @@ thead {
     border-color: inherit;
 }
 
+.table thead th {
+    vertical-align: bottom;
+    border-bottom: 2px solid #dee2e6;
+}
+
 .table td, .table th {
     padding: .75rem;
     vertical-align: top;
     border-top: 1px solid #dee2e6;
+}
+
+th {
+    text-align: inherit;
+}
+
+tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+}
+
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+
+.text-left {
+    text-align: left!important;
 }

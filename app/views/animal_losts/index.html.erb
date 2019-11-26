@@ -2,7 +2,7 @@
 
 <h1>Animal Perdido</h1>
 
-<table>
+<!--<table>
   <thead>
     <tr>
       <th>Foto do animal</th>
@@ -24,6 +24,7 @@
           <%= image_tag animal_lost.image %>
           <% end %>
         </td>
+        <td><%= animal_lost.name %></td>
         <td><%= animal_lost.specie %></td>
         <td><%= animal_lost.sex %></td>
         <td><%= animal_lost.lostdate %></td>
@@ -36,7 +37,45 @@
       </tr>
     <% end %>
   </tbody>
-</table>
+</table><-->
+
+
+
+
+<div class="col-12 col-sm-12 col-md-6 col-lg-6 text-center">
+        <table class="table my_custom_table">
+          <thead class="my_custom_thead">
+            <tr>
+              <th colspan="5">
+                Animais Perdidos
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <% @animal_losts.each do |animal_lost| %>
+              <tr>
+                <td>
+                  <% if animal_lost.image.attached? %>
+                  <%= image_tag animal_lost.image %>
+                  <% end %>
+                </td>
+                <td class="text-left">
+                  <b><%= animal_lost.name %></td></b>
+                  <br> Espécie: <%= animal_lost.specie %></td>
+                  <br> Sexo: <%= animal_lost.sex %>
+                  <br> Data do desaparecimento: <%= animal_lost.sex %>
+                  <br> Local de Desaparecimento: <%= animal_lost.sex %>
+                  <br> Contato: <%= animal_lost.sex %>
+                  <br> Observações: <%= animal_lost.sex %>
+                </td>
+                <td>
+                  <%= link_to 'Família Reunida', animal_lost, method: :delete, data: { confirm: 'Você tem certeza que o animal foi devolvido a família dele?' } %>
+                </td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+</div>
 
 <br>
 

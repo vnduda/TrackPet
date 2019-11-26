@@ -5,10 +5,11 @@
 
 <!--<a href="/" class="btn btn-lost-animals">Perdi meu animalzinho</a>-->
 
-<p>
-    <%= link_to 'Perdi meu animalzinho', animal_losts_path, class: 'btn btn-primary btn-lg' %>
-</p>
-
-<p>
-    <%= link_to 'Achei um animalzinho', animal_founds_path, class: 'btn btn-primary btn-lg' %>
+<p> 
+    <table style="width:90%">
+        <tr>
+            <td><%= link_to 'Perdi meu animalzinho', animal_losts_path, class: 'btn btn-primary btn-lg' %></td>
+            <td><%= link_to 'Achei um animalzinho', animal_founds_path, class: 'btn btn-primary btn-lg' %></td>
+        </tr>
+    </table>
 </p>

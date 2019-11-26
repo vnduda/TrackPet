@@ -29,7 +29,7 @@ Eduarda Vieira, João Victor Rocha, Ana Luisa Burjack, André Lopes
 **[RF10]** Como USUÁRIO, desejo INFORMAR QUE O ANIMAL JÁ ESTÁ NOVAMENTE COM A FAMÍLIA. O usuário que postou o anúncio (seja um anúncio de animal perdido ou encontrado) deve utilizar o botão “Família Reunida” para informar que o animal já retornou ao seu lar.
 
 ## Diagrama do Banco de Dados
-![Diagrama - TrackPet]()
+![Diagrama - TrackPet](Bd-TrackPet.png)
 
 ## Caso de uso detalhado:
 

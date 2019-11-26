@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+# Classe controller para funcoes de animais encontrados.
 class AnimalFoundsController < ApplicationController
   before_action :set_animal_found, only: %i[show edit update destroy]
 

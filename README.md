@@ -7,25 +7,30 @@ A integração contínua leva em consideração
 - Detecção de Bugs
 - Verificação de estilo
 
-### Descrição do projeto TrackPet
+## Descrição do projeto TrackPet
 Atualmente há uma grande dificuldade em divulgar animais desaparecidos, para quem perdeu ou para quem encontrou. Os mais usados são redes sociais e grupos em apps de conversação, que acabam não sendo muito eficazes devido os seguintes fatores, por exemplo: 
   - Mecanismos de pesquisa deficientes;
   - Informações descentralizadas (são diversos grupos em diversas redes sociais)
 
 O intuito do sistema é criar um meio para conectar pessoas que perderam seus animais, com pessoas que encontraram animais perdidos.
 
-### Componentes:
-  Eduarda Vieira, João Victor Rocha, Ana Luisa Burjack, André Lopes
+#### Componentes:  
+Eduarda Vieira, João Victor Rocha, Ana Luisa Burjack, André Lopes
 
-### Requisitos implementados:
--  **[RF02]** Como DONO DE UM ANIMAL, desejo CADASTRAR OS DADOS DO MEU ANIMAL PERDIDO, para que ALGUÉM POSSA RECONHECÊ-LO.   
--  **[RF03]** Como USUÁRIO, desejo CADASTRAR OS DADOS DO ANIMAL QUE EU ENCONTREI NO SISTEMA, para que ALGUÉM POSSA RECONHECÊ-LO.   
--  **[RF05]** Como DONO DE ANIMAL PERDIDO, desejo que TENHA UMA ABA PARA ANIMAIS ENCONTRADOS, para tornar a busca filtrada apenas para animais que foram encontrados por outros usuários.    
--  **[RF06]** Como PESSOA QUE ENCONTROU O ANIMAL, desejo que TENHA UMA ABA PARA ANIMAIS PERDIDOS, para tornar a busca filtrada apenas para animais que foram encontrados por outros usuários.
-- **[RF10]** COmo USUÁRIO, desejo INFORMAR QUE O ANIMAL JÁ ESTÁ NOVAMENTE COM A FAMÍLIA. O usuário que postou o anúncio (seja um anúncio de animal perdido ou encontrado) deve utilizar o botão “Família Reunida” para informar que o animal já retornou ao seu lar.
+## Requisitos implementados:
+**[RF02]** Como DONO DE UM ANIMAL, desejo CADASTRAR OS DADOS DO MEU ANIMAL PERDIDO, para que ALGUÉM POSSA RECONHECÊ-LO.   
 
+**[RF03]** Como USUÁRIO, desejo CADASTRAR OS DADOS DO ANIMAL QUE EU ENCONTREI NO SISTEMA, para que ALGUÉM POSSA RECONHECÊ-LO.   
 
-## Caso de uso detalhado do que foi feito:
+**[RF05]** Como DONO DE ANIMAL PERDIDO, desejo que TENHA UMA ABA PARA ANIMAIS ENCONTRADOS, para tornar a busca filtrada apenas para animais que foram encontrados por outros usuários.    
+
+**[RF06]** Como PESSOA QUE ENCONTROU O ANIMAL, desejo que TENHA UMA ABA PARA ANIMAIS PERDIDOS, para tornar a busca filtrada apenas para animais que foram encontrados por outros usuários.
+
+**[RF10]** COmo USUÁRIO, desejo INFORMAR QUE O ANIMAL JÁ ESTÁ NOVAMENTE COM A FAMÍLIA. O usuário que postou o anúncio (seja um anúncio de animal perdido ou encontrado) deve utilizar o botão “Família Reunida” para informar que o animal já retornou ao seu lar.
+
+## Diagrama do Banco de Dados
+
+## Caso de uso detalhado:
 
 #### CASO DE USO UC01: CRIAR ANÚNCIO DE ANIMAL PERDIDO.
 

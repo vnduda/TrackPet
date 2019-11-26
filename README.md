@@ -1,11 +1,10 @@
 # TrackPet :dog: :cat:
 ![Integração Contínua](https://travis-ci.org/vnduda/TrackPet.svg?branch=master)  
 A integração contínua leva em consideração
-- Testes de Unidade 
 - Documentação (rdoc)
-- Vulnerabilidades
-- Detecção de Bugs
-- Verificação de estilo
+- Vulnerabilidades (bundler-audit)
+- Verificação de estilo (rubocop)
+- Complexidade ciclomática (rubocop)
 
 ## Descrição do projeto TrackPet
 Atualmente há uma grande dificuldade em divulgar animais desaparecidos, para quem perdeu ou para quem encontrou. Os mais usados são redes sociais e grupos em apps de conversação, que acabam não sendo muito eficazes devido os seguintes fatores, por exemplo: 

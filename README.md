@@ -2,7 +2,7 @@
 ![Integração Contínua](https://travis-ci.org/vnduda/TrackPet.svg?branch=master)  
 A integração contínua leva em consideração
 - Testes de Unidade 
-- Documentação
+- Documentação (rdoc)
 - Vulnerabilidades
 - Detecção de Bugs
 - Verificação de estilo
@@ -31,14 +31,13 @@ O intuito do sistema é criar um meio para conectar pessoas que perderam seus an
 
 **Ator primário**: Usuário (Dono de Cão perdido)  
 **Pré-Condições**:  
-- O Usuário está cadastrado.  
-- O Usuário está logado.  
+- Não há.
 
 **Pós-Condições**:  
 - O anúncio de animal perdido foi devidamente cadastrado no sistema.  
 
 **Cenário Principal**:  
-1. O usuário logado solicita a adição de anúncio ao sistema.
+1. O usuário solicita a adição de anúncio ao sistema.
 2. O usuário preenche os campos obrigatórios requeridos pelo sistema.  
 3. O sistema cadastra as informações e mostra o anúncio na tela de animais perdidos. 
 
@@ -90,5 +89,38 @@ Pós-Condições:
 2- O usuário não fez nenhuma alteração aos campos do anúncio.  
 - O botão de salvar fica indisponível enquanto o usuário não fazer nenhuma alteração. E o sistema aguarda alguma interação com o usuário.
 
+#### UC04: CRIAR UM ANÚNCIO DE ANIMAL ENCONTRADO
+**Ator primário**: Usuário (Que encontrou um animal perdido)  
+**Pré-Condições**:  
+- Não há.
 
+**Pós-Condições**:  
+- O anúncio de animal encontrado foi devidamente cadastrado no sistema.  
 
+**Cenário Principal**:  
+1. O usuário solicita a adição de anúncio de animal encontrado ao sistema.
+2. O usuário preenche os campos obrigatórios requeridos pelo sistema.  
+3. O sistema cadastra as informações e mostra o anúncio na tela de animais encontrados. 
+
+**Fluxo Alternativo**:   
+
+2-  O usuário deixa um dos campos obrigatório em branco.   
+- O sistema não deixa o cadastro do anúncio ser finalizado e transmite uma mensagem que indica a falta de um campo.
+
+#### UC05 - LOGAR-SE NO SISTEMA
+**Ator primário**: Qualquer usuário 
+**Pré-Condições**:  
+- Não há.
+
+**Pós-Condições**:  
+Há uma indicação visual de que o usuário está logado
+
+**Cenário Principal**:  
+1. O usuário acessa o software.
+2. O usuário informa o seu email e senha e solicita o login.
+3. O software valida o usuário e o redireciona para a página principal.
+
+**Fluxo Alternativo**:   
+
+2-  O usuário preenche um dos campos incorretamente.
+  - O software não permite que o usuário faça o login.

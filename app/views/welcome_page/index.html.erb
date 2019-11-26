@@ -1,7 +1,14 @@
 <h1>Bem vindo ao Track my pet</h1>
-<h2>Sua nova forma de encontrar e anunciar um animal perdido!</h2>
+<p>
+    Sua nova forma de encontrar e anunciar um animal perdido!
+</p>
 
 <!--<a href="/" class="btn btn-lost-animals">Perdi meu animalzinho</a>-->
 
-<a href="<%= animal_losts_path(@animal_losts) %>" class="btn-rounded lost-animals">Perdi meu animalzinho</a>
-<a href="<%= animal_founds_path(@animal_founds) %>" class="btn found-animals">Achei um animalzinho</a>
+<p>
+    <%= link_to 'Perdi meu animalzinho', animal_losts_path, class: 'btn btn-primary btn-lg' %>
+</p>
+
+<p>
+    <%= link_to 'Achei um animalzinho', animal_founds_path, class: 'btn btn-primary btn-lg' %>
+</p>

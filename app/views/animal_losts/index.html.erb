@@ -20,8 +20,8 @@
     <% @animal_losts.each do |animal_lost| %>
       <tr>
         <td>
-          <% if animal_found.image.attached? %>
-          <%= image_tag animal_found.image %>
+          <% if animal_lost.image.attached? %>
+          <%= image_tag animal_lost.image %>
           <% end %>
         </td>
         <td><%= animal_lost.specie %></td>

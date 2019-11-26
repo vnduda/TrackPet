@@ -5,5 +5,5 @@ script:
  - bundle exec rake db:create
  - bundle exec rake db:migrate
  - rdoc app
- - bundle-audit check --update
+ - bundle exec bundle-audit update && bundle exec bundle-audit check
  - bundle exec rake test

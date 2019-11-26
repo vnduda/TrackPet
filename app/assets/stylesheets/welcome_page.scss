@@ -1,14 +1,57 @@
 // Place all the styles related to the Welcome_Page controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.btn-rounded.lost-animals{
-    background-color: coral;
-    border-bottom-color: coral;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-bottom-style: solid;
-    
-}
-.btn-rounded.found-animals{
 
+//.btn-rounded.lost-animals{
+    //background-color: coral;
+    //border-bottom-color: coral;
+   // border-bottom-left-radius: 50px;
+   // border-bottom-right-radius: 50px;
+   // border-bottom-style: solid;
+    
+//}
+//.btn-rounded.found-animals{}
+
+$gray-medium-light: #EAEAEA;
+
+.post-card {
+  display: inline-block;
+}
+
+.post-legenda {
+  display: inline-block;
+  font-size: 10px;
+  color: gray;
+}
+
+.caption {
+  .legenda {
+    padding-top: 5px;
+    text-align: center;
+  }
+}
+
+footer {
+  margin-top: 45px;
+  padding-top: 5px;
+  border-top: 1px solid $gray-medium-light;
+  color: $gray-light;
+  a {
+    color: $gray;
+    /*It means: that a:hover */
+    &:hover{
+      color: $gray-darker;
+    }
+  }
+  small {
+    float: left;
+  }
+  ul {
+    float: right;
+    list-style: none;
+    li {
+      float: left;
+      margin-left: 15px;
+    }
+  }
 }

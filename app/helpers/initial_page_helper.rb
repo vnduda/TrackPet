@@ -1,0 +1,2 @@
+module InitialPageHelper
+end

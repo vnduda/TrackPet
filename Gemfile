@@ -24,7 +24,6 @@ gem 'jbuilder', '~> 2.7'
 gem 'spree', '~> 4.0'
 gem 'spree_auth_devise', '~> 4.0'
 gem 'spree_gateway', '~> 3.6'
-gem 'bundler-audit'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -56,3 +55,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "bundler-audit", "~> 0.6.1"

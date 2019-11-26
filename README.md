@@ -26,7 +26,7 @@ Eduarda Vieira, João Victor Rocha, Ana Luisa Burjack, André Lopes
 
 **[RF06]** Como PESSOA QUE ENCONTROU O ANIMAL, desejo que TENHA UMA ABA PARA ANIMAIS PERDIDOS, para tornar a busca filtrada apenas para animais que foram encontrados por outros usuários.
 
-**[RF10]** COmo USUÁRIO, desejo INFORMAR QUE O ANIMAL JÁ ESTÁ NOVAMENTE COM A FAMÍLIA. O usuário que postou o anúncio (seja um anúncio de animal perdido ou encontrado) deve utilizar o botão “Família Reunida” para informar que o animal já retornou ao seu lar.
+**[RF10]** Como USUÁRIO, desejo INFORMAR QUE O ANIMAL JÁ ESTÁ NOVAMENTE COM A FAMÍLIA. O usuário que postou o anúncio (seja um anúncio de animal perdido ou encontrado) deve utilizar o botão “Família Reunida” para informar que o animal já retornou ao seu lar.
 
 ## Diagrama do Banco de Dados
 

@@ -7,4 +7,3 @@ script:
  - rdoc app
  - bundle exec bundle-audit update && bundle exec bundle-audit check
  - bundle exec rubocop app
- - bundle exec rake test

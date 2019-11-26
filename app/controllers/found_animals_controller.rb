@@ -1,5 +1,7 @@
+# frozen_string_literal: true
+
 class FoundAnimalsController < ApplicationController
-  before_action :set_found_animal, only: [:show, :edit, :update, :destroy]
+  before_action :set_found_animal, only: %i[show edit update destroy]
 
   # GET /found_animals
   # GET /found_animals.json
@@ -9,8 +11,7 @@ class FoundAnimalsController < ApplicationController
 
   # GET /found_animals/1
   # GET /found_animals/1.json
-  def show
-  end
+  def show; end
 
   # GET /found_animals/new
   def new
@@ -18,8 +19,7 @@ class FoundAnimalsController < ApplicationController
   end
 
   # GET /found_animals/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /found_animals
   # POST /found_animals.json
@@ -62,13 +62,14 @@ class FoundAnimalsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_found_animal
-      @found_animal = FoundAnimal.find(params[:id])
-    end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def found_animal_params
-      params.require(:found_animal).permit(:image, :species, :sex, :founddate, :foundplace, :contact, :ps, :User_id)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_found_animal
+    @found_animal = FoundAnimal.find(params[:id])
+  end
+
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def found_animal_params
+    params.require(:found_animal).permit(:image, :species, :sex, :founddate, :foundplace, :contact, :ps, :User_id)
+  end
 end

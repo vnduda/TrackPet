@@ -17,6 +17,8 @@ O intuito do sistema é criar um meio para conectar pessoas que perderam seus an
 Eduarda Vieira, João Victor Rocha, Ana Luisa Burjack, André Lopes
 
 ## Requisitos implementados:
+**[RF01]**  Como USUÁRIO, desejo ME CADASTRAR no software, para que eu possa usar as funções do sistema que exigem login.
+
 **[RF02]** Como DONO DE UM ANIMAL, desejo CADASTRAR OS DADOS DO MEU ANIMAL PERDIDO, para que ALGUÉM POSSA RECONHECÊ-LO.   
 
 **[RF03]** Como USUÁRIO, desejo CADASTRAR OS DADOS DO ANIMAL QUE EU ENCONTREI NO SISTEMA, para que ALGUÉM POSSA RECONHECÊ-LO.   
@@ -29,6 +31,9 @@ Eduarda Vieira, João Victor Rocha, Ana Luisa Burjack, André Lopes
 
 ## Diagrama do Banco de Dados
 ![Diagrama - TrackPet](Bd-TrackPet.png)
+
+## Diagrama de Caso de Uso
+![Use Case Diagram](current-usecase.png)
 
 ## Caso de uso detalhado:
 

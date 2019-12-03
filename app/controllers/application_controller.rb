@@ -3,5 +3,5 @@
 # Todos os controllers herdam esta classe, isso significa que
 # esta classe eh util como um lugar centralizado para configuracoes e filtros.
 class ApplicationController < ActionController::Base
-    before_action :authenticate_user!
+  before_action :authenticate_user!
 end

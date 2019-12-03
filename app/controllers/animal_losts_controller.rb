@@ -63,11 +63,12 @@ class AnimalLostsController < ApplicationController
   end
 
   private
+
   # Use callbacks to share common setup or constraints between actions.
   def set_animal_lost
     @animal_lost = AnimalLost.find(params[:id])
   end
-  
+
   # Never trust parameters from the scary internet, only allow the white list through.
   def animal_lost_params
     params.require(:animal_lost).permit(:image, :name, :specie, :sex, :lostdate, :lostplace, :contact, :ps)

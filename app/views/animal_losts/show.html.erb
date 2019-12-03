@@ -1,6 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<%= link_to image_tag(@animal_lost.image), animal_founds_path %>
+<%= link_to image_tag(@animal_lost.image, size: "200x200"), animal_founds_path %>
+
+<br><br>
 
 <p>
   <strong>Atende pelo nome:</strong>
@@ -37,5 +39,5 @@
   <%= @animal_lost.ps %>
 </p>
 
-<%= link_to 'Editar', edit_animal_lost_path(@animal_lost) %> |
-<%= link_to 'Voltar', animal_losts_path %>
+<br><%= link_to 'Editar', edit_animal_lost_path(@animal_lost), class: "btn btn-primary" %>
+<span><%= link_to 'Voltar', animal_losts_path, class: "btn btn-primary"%></span>

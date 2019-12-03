@@ -68,6 +68,9 @@ GEM
     bootstrap-sass (3.4.1)
       autoprefixer-rails (>= 5.2.1)
       sassc (>= 2.0.0)
+    bootstrap_form (4.3.0)
+      actionpack (>= 5.0)
+      activemodel (>= 5.0)
     builder (3.2.3)
     bundler-audit (0.6.1)
       bundler (>= 1.2.0, < 3)
@@ -245,6 +248,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.2)
   bootstrap-sass (~> 3.4.1)
+  bootstrap_form (~> 4.3.0)
   bundler-audit (~> 0.6.1)
   byebug
   capybara (>= 2.15)
@@ -267,7 +271,7 @@ DEPENDENCIES
   webpacker (~> 4.0)
 
 RUBY VERSION
-   ruby 2.6.5p114
+   ruby 2.6.3p62
 
 BUNDLED WITH
    2.0.2

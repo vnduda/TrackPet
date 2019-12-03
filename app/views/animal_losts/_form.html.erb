@@ -1,4 +1,4 @@
-<%= form_with(model: animal_lost, local: true) do |form| %>
+<%= bootstrap_form_with(model: animal_lost, local: true) do |form| %>
   <% if animal_lost.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(animal_lost.errors.count, "error") %> prohibited this animal_lost from being saved:</h2>
@@ -12,43 +12,35 @@
   <% end %>
   
   <div class="field">
-    <%= form.label :image %>
-    <%= form.file_field :image %>
+    <%= form.file_field :image, label: "Selecione a imagem" %>
   </div>
 
   <div class="field">
-    <%= form.label :name, 'Atende pelo nome:' %>
-    <%= form.text_field :name %>
+    <%= form.text_field :name, label: "Atende pelo nome:" %>
   </div>
   
   <div class="field">
-    <%= form.label :specie, 'Espécie' %>
-    <%= form.text_field :specie %>
+    <%= form.text_field :specie, label: "Espécie" %>
   </div>
 
   <div class="field">
-    <%= form.label :sex, 'Sexo' %>
-    <%= form.text_field :sex %>
+    <%= form.text_field :sex, label: "Sexo" %>
   </div>
 
   <div class="field">
-    <%= form.label :lostdate, 'Data que se perdeu' %>
-    <%= form.date_select :lostdate %>
+    <%= form.date_select :lostdate, label: "Data que se perdeu" %>
   </div>
 
   <div class="field">
-    <%= form.label :lostplace, 'Local que se perdeu' %>
-    <%= form.text_field :lostplace %>
+     <%= form.text_field :lostplace, label: "Local que se perdeu" %>
   </div>
 
   <div class="field">
-    <%= form.label :contact, 'Contato' %>
-    <%= form.text_field :contact %>
+  <%= form.text_field :contact, label: "Contato" %>
   </div>
 
   <div class="field">
-    <%= form.label :ps, 'Observação' %>
-    <%= form.text_area :ps %>
+    <%= form.text_area :ps, label: "Observação" %>
   </div>
 
   <div class="actions">

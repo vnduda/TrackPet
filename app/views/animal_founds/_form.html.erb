@@ -12,31 +12,31 @@
   <% end %>
 
   <div class="field">
-    <%= form.file_field :image, label: "Selecione a imagem" %>
+    <%= form.file_field :image, label: "Selecione a imagem", required: true %>
   </div>
 
   <div class="field">
-    <%= form.text_field :specie, label: "Espécie" %>
+    <%= form.text_field :specie, label: "Espécie", required: true %>
   </div>
 
   <div class="field">
-    <%= form.text_field :sex, label: "Sexo" %>
+    <%= form.text_field :sex, label: "Sexo", required: true %>
   </div>
 
   <div class="field">
-    <%= form.date_select :founddate, label: "Data que foi encontrado" %>
+    <%= form.date_select :founddate, label: "Data que foi encontrado", required: true %>
   </div>
 
   <div class="field">
-    <%= form.text_field :foundplace, label: "Local que foi encontrado" %>
+    <%= form.text_field :foundplace, label: "Local que foi encontrado", required: true %>
   </div>
 
   <div class="field">
-    <%= form.text_field :contact, label: "Contato" %>
+    <%= form.text_field :contact, label: "Contato", required: true %>
   </div>
 
   <div class="field">
-    <%= form.text_area :ps, label: "Observação" %>
+    <%= form.text_area :ps, label: "Observação", required: false %>
   </div>
 
   <div class="actions">

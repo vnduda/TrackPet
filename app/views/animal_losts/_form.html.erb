@@ -12,35 +12,35 @@
   <% end %>
   
   <div class="field">
-    <%= form.file_field :image, label: "Selecione a imagem" %>
+    <%= form.file_field :image, label: "Selecione a imagem", required: true %>
   </div>
 
   <div class="field">
-    <%= form.text_field :name, label: "Atende pelo nome:" %>
+    <%= form.text_field :name, label: "Atende pelo nome:", required: true %>
   </div>
   
   <div class="field">
-    <%= form.text_field :specie, label: "Espécie" %>
+    <%= form.text_field :specie, label: "Espécie", required: true %>
   </div>
 
   <div class="field">
-    <%= form.text_field :sex, label: "Sexo" %>
+    <%= form.text_field :sex, label: "Sexo", required: true %>
   </div>
 
   <div class="field">
-    <%= form.date_select :lostdate, label: "Data que se perdeu" %>
+    <%= form.date_select :lostdate, label: "Data que se perdeu", required: true %>
   </div>
 
   <div class="field">
-     <%= form.text_field :lostplace, label: "Local que se perdeu" %>
+     <%= form.text_field :lostplace, label: "Local que se perdeu", required: true %>
   </div>
 
   <div class="field">
-  <%= form.text_field :contact, label: "Contato" %>
+  <%= form.text_field :contact, label: "Contato", required: true %>
   </div>
 
   <div class="field">
-    <%= form.text_area :ps, label: "Observação" %>
+    <%= form.text_area :ps, label: "Observação", required: false %>
   </div>
 
   <div class="actions">

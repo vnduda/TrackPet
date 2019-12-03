@@ -9,5 +9,4 @@ class AnimalFound < ApplicationRecord
   validates_presence_of :founddate
   validates_presence_of :specie
   validates_presence_of :contact
-
 end
